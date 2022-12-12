@@ -9,8 +9,8 @@ APPTAG="[preproc_single_subject.bash]"
 SUBJECT_ID="$1"
 
 # Set path to an optional t2-weighted image for the subject. If you have no t2 image, you can set this to the empty string to avoid the warning message that the file is missing.
-T2_FILE_PATH="$(pwd)/T2/${SUBJECT_ID}_T2W.nii"
-FLAIR_FILE_PATH="$(pwd)/FLAIR/${SUBJECT_ID}_FLAIR.nii"
+T2_FILE_PATH="$(pwd)/T2/${SUBJECT_ID}_T2W.nii" #Create an T2 name folder and place T2 files in that folder
+FLAIR_FILE_PATH="$(pwd)/FLAIR/${SUBJECT_ID}_FLAIR.nii" #repeat similar step for FLAIR
 #TSE_FILE_PATH="TSE/${SUBJECT_ID}_FRFSE.nii"
 
 
