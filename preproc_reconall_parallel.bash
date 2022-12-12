@@ -1,15 +1,11 @@
 #!/bin/bash
 ## preproc_reconall_parallel.bash -- Perform the FreeSurfer recon-all structural MRI pipeline for a number of subjects in parallel, based on a directory with nifti (.nii) files.
-## Written by Tim Schäfer, 2018-11-22
-##
 ## This script uses GNU Parallel to fully utilize all cores of your machine.
 ## You also need FreeSurfer, of course.
-#
-# It is strongly recommended to run this script from a 'GNU screen' session with the 'screen' command to ensures it continues running on the remote machine when your
-# local PC/MAC restarts for system updates or you accidently close the terminal window. E.g., start a session named "reconENIGMA" with 'screen -S reconENIGMA'. Make sure
 # FreeSurfer is setup correctly in the session before running.
 
 # Set SUBJECTS_DIR environment variable. This is require for the recon-all FreeSurfer command.
+#store the following bash script in subject directory of T1 file for initiations of script.
 export SUBJECTS_DIR=$(pwd)
 APPTAG="[PREPROC_PARALLEL]"
 
