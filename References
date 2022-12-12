@@ -1,0 +1,5 @@
+Following below is the list of users/links and groups through which following code and instruction were taken. 
+Author in no condition is obliged to verfiy the calim that following listed refrence are the only resources which have been utilised in development of this pipeline.
+Freesurfer installation and basic usage https://surfer.nmr.mgh.harvard.edu/
+Parallel and general introduction to unix https://github.com/andrewjahn?tab=repositories and https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_04_ReconAllParallel.html
+preconfigured scripts which have been used in current pipeline as is made avaiable under MIT licenses by https://github.com/dfsp-spirit/freesurfer_parallel_scripts
