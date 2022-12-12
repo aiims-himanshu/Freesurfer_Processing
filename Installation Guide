@@ -1,0 +1,11 @@
+Go to https://surfer.nmr.mgh.harvard.edu/fswiki/rel7downloads
+Download the deb or tar package for installtion for compatible OS.
+if it is a tar file use the following command "tar -C /usr/local -xzvf freesurfer-Linux-<platform>-<release>-full.tar.gz" make sure to enable super user in terminal for any premission error.
+if there is a debian packages use the following command "sudo dpkg -i freesurfer_<your downloaded version>.deb" from the working directory of download/pakcage.
+There are some external dependecies which make get invoked during debian packages installation for ubuntu 20 or higher download the following packages using "sudo apt-get -y install bc binutils libgomp1 perl psmisc sudo tar tcsh unzip uuid-dev vim-common libjpeg62-dev"
+in case of any broke reportries are encountered use "sudo apt --fix-broken install".
+Setup and Configuration
+Type the following command into a terminal window to setup and source the FreeSurfer environment. Note that you must choose the directory where you extracted freesurfer to become your FREESURFER_HOME (/usr/local/freesurfer in our example):
+export FREESURFER_HOME=/usr/local/freesurfer/<version>
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+A license file is required to enable the tools. One can be obtained for free by registering at: https://surfer.nmr.mgh.harvard.edu/registration.html
