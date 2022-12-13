@@ -1,0 +1,8 @@
+Install Parallel using following set of commands
+tar xjf  parallel-latest.tar.bz2
+cd parallel-20221122
+./configure && make
+sudo make install
+
+if using BIDS directory format convert the .gz file to unzip versip using "for nf in *.nii.gz; do gunzip "$nf"; done"
+Remove _T1w subscript from T1 images, only use identifiers for T2 and FLAIR
